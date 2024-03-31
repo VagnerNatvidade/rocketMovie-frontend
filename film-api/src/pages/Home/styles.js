@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: grid;
@@ -26,20 +27,25 @@ export const Container = styled.div`
   }
 `;
 
-export const NewMovie = styled.button`
+export const NewMovie = styled(Link)`
+  position: absolute;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 12px 32px;
   border: none;
   border-radius: 10px;
+  font-weight: 600;
   background: ${({ theme }) => theme.COLORS.PINK_900};
+  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 `;
 
 export const Content = styled.div`
-  > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: relative;
+
+  h2 {
+    margin-bottom: 12px;
   }
 `;

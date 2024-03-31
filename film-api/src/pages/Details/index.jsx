@@ -1,6 +1,7 @@
 import { FiArrowLeft, FiClock } from "react-icons/fi";
 import { Container } from "./styles";
 import { Rating } from "../../components/Rating";
+
 import { Header } from "../../components/Header";
 import { Tag } from "../../components/Tag";
 

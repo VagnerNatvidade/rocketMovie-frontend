@@ -5,9 +5,5 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    button {
-      width: 240px;
-    }
   }
 `;

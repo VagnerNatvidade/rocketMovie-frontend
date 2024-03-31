@@ -15,24 +15,6 @@ export const Container = styled.header`
   }
 
   > div {
-    display: flex;
-    align-items: center;
 
-    p {
-      width: 124px;
-      text-align: end;
-      margin-right: 8px;
-
-      span {
-        color: ${({ theme }) => theme.COLORS.GRAY_100};
-      }
-    }
-
-    img {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
-    }
   }
 `;

@@ -13,13 +13,13 @@ export function Note({ title, data, ...rest }) {
         dignissimos, suscipit labore iusto neque nemo quia quis? Dolor, ullam!
         Expedita.
       </p>
-      {data.tags && 
+      {data.tags && (
         <footer>
-          {
-          data.tags.map(tag => <Tag key={tag.id} title={tag.name} />)
-          }
+          {data.tags.map((tag) => (
+            <Tag key={tag.id} title={tag.name} />
+          ))}
         </footer>
-      }
+      )}
     </Container>
   );
 }
