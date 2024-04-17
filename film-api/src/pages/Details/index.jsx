@@ -1,9 +1,10 @@
-import { FiArrowLeft, FiClock } from "react-icons/fi";
 import { Container } from "./styles";
-import { Rating } from "../../components/Rating";
+
+import { FiArrowLeft, FiClock } from "react-icons/fi";
 
 import { Header } from "../../components/Header";
 import { Tag } from "../../components/Tag";
+import { Rating } from "../../components/Rating"; 
 
 export function Details() {
   return (
@@ -15,7 +16,7 @@ export function Details() {
           Voltar
         </a>
         <div>
-          <h1>Interestellar</h1>
+          <h1>Interestelar</h1>
           <Rating />
         </div>
         <div>

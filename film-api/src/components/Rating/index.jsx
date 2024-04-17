@@ -1,4 +1,5 @@
 import { Container } from "./styles";
+
 import { useState } from "react";
 import { BiSolidStar } from "react-icons/bi";
 
@@ -10,7 +11,7 @@ export function Rating() {
       {[...Array(5)].map((star, index) => {
         const currentRating = index + 1;
         return (
-          <label>trdzq
+          <label>
             <input
               type="radio"
               name="rating"

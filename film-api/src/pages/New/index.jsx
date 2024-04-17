@@ -1,11 +1,13 @@
-import { FiArrowLeft } from "react-icons/fi";
 import { Container, Form } from "./styles";
+
+import { FiArrowLeft } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
 import { NoteItem } from "../../components/NoteItem";
 import { Button } from "../../components/Button";
-import { Link } from "react-router-dom";
 
 export function New() {
   return (

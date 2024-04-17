@@ -1,9 +1,10 @@
-import { FiPlus } from "react-icons/fi";
 import { Container, Content, NewMovie } from "./styles";
+
+import { FiPlus } from "react-icons/fi";
+
 import { Header } from "../../components/Header";
-import { Section } from "../../components/Section";
 import { Note } from "../../components/Note";
-import { Rating } from "../../components/Rating";
+import { Section } from "../../components/Section";
 
 export function Home() {
   return (

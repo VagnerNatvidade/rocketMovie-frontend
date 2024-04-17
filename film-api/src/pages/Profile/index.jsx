@@ -1,8 +1,10 @@
-import { FiArrowLeft, FiLock, FiMail, FiUser } from "react-icons/fi";
 import { Container, Header, Content } from "./styles";
+
+import { Link } from "react-router-dom";
+import { FiArrowLeft, FiLock, FiMail, FiUser } from "react-icons/fi";
+
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
-import { Link } from "react-router-dom";
 
 export function Profile() {
   return (
