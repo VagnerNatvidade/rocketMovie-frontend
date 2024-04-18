@@ -7,10 +7,10 @@ export const Container = styled.div`
   padding-right: 16px;
   border-radius: 10px;
 
-  border: ${({ theme, isNew }) =>
-    isNew ? `2px dashed ${theme.COLORS.BACKGROUND_800}` : "none"};
-  background: ${({ theme, isNew }) =>
-    isNew ? "transparent" : theme.COLORS.BACKGROUND_800};
+  border: ${({ theme, $isnew }) =>
+    $isnew ? `2px dashed ${theme.COLORS.BACKGROUND_800}` : "none"};
+  background: ${({ theme, $isnew }) =>
+    $isnew ? "transparent" : theme.COLORS.BACKGROUND_800};
   color: ${({ theme }) => theme.COLORS.GRAY_300};
 
   > button {

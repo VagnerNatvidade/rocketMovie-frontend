@@ -1,17 +1,25 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-export const Container = styled(Link)`
+export const Container = styled.div`
   display: flex;
   align-items: center;
 
   p {
-    width: 124px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
     text-align: end;
+    min-width: 120px;
     margin-right: 8px;
     color: ${({ theme }) => theme.COLORS.WHITE};
 
-    span {
+    &:hover {
+      cursor: pointer;
+    }
+
+    button {
+      border: none;
+      background: none;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
   }
@@ -21,5 +29,9 @@ export const Container = styled(Link)`
     height: 64px;
     border-radius: 50%;
     border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;

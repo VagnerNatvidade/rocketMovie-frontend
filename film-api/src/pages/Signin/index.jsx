@@ -34,11 +34,11 @@ export function Signin() {
         />
         <Input
           placeholder="Senha"
-          type="text"
+          type="password"
           icon={FiLock}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button title="Entrar" onChange={handleSignIn} />
+        <Button title="Entrar" onClick={handleSignIn} />
         <Link to="/register">Criar conta</Link>
       </Form>
       <Background />

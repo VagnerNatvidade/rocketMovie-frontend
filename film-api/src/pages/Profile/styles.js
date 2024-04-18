@@ -29,6 +29,7 @@ export const Content = styled.main`
   margin: -100px auto;
 
   > div:nth-child(1) {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +39,30 @@ export const Content = styled.main`
       height: 180px;
       margin-bottom: 40px;
       border-radius: 50%;
+    }
+
+    label {
+      position: absolute;
+      top: 140px;
+      right: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: ${({ theme }) => theme.COLORS.PINK_900};
+      cursor: pointer;
+
+      > input {
+        display: none;
+      }
+
+      > svg {
+        width: 20px;
+        height: 20px;
+        color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+      }
     }
 
     div {
