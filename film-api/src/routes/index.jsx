@@ -5,11 +5,7 @@ import { AppRoutes } from "./App.routes";
 import { AuthRoutes } from "./Auth.routes";
 
 export function Routes() {
-  const { user } = useAuth();
+  const user = localStorage.getItem("@rocketnotes:user");
 
-  return (
-    <BrowserRouter>
-      {user ? <AppRoutes /> : <AuthRoutes />}
-    </BrowserRouter>
-  );
+  return <BrowserRouter>{user ? <AppRoutes /> : <AuthRoutes />}</BrowserRouter>;
 }

@@ -48,16 +48,17 @@ export const Form = styled.form`
     display: flex;
     gap: 24px;
   }
-
+  
   > div:nth-child(4) {
     h2 {
       font-weight: 300;
       margin: 32px 0 24px;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
-
+    
     > div {
       display: flex;
+      flex-wrap: wrap;
       gap: 24px;
       padding: 12px;
       border-radius: 10px;

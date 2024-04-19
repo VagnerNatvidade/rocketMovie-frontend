@@ -8,12 +8,7 @@ export function Note({ title, data, ...rest }) {
     <Container {...rest}>
       <h1>{data.title}</h1>
       <Rating />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        voluptatem architecto similique voluptates, adipisci dolores est minus
-        magni quos officia nihil commodi tenetur, soluta reprehenderit delectus
-        eaque in id culpa.
-      </p>
+      <p>{data.description}</p>
       {data.tags && (
         <footer>
           {data.tags.map((tag) => (
